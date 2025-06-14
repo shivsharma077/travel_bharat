@@ -18,9 +18,10 @@
           <h3>Welcome To India</h3>
           <h3>Do Come & Visit <span class="animateText"></span></h3>
           <p>"India once is not enough"</p>
-          <div class="btn1">
-            <a href="Login.html">Login or SignUp Here</a>
-          </div><br><br><br><br><br><br><br><br>
+          <div class="btn-container">
+  <a href="Login.html" class="btn1">Login or SignUp Here</a>
+</div>
+<br><br><br><br><br><br><br><br>
           <form>
             <h3>Why to choose Travel Bharat</h3>
 <h4>Because your dream trip shouldn’t cost a fortune.<br>
@@ -158,15 +159,20 @@ section .btn1{
   animation: changeplace 12s infinte;
   margin-left: 10px;
 }
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .btn1 {
   background: white;
   color: black;
   padding: 12px 30px;
   border-radius: 1.5rem;
-  text-align: center;
-  width: fit-content;
-  margin: 0 auto;
   font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
   transition: all 0.3s ease;
 }
 
