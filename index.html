@@ -23,12 +23,27 @@
 </div>
 <br><br><br><br><br><br><br><br>
           <form>
-            <h3>Why to choose Travel Bharat?</h3>
-<h4>Because your dream trip shouldn’t cost a fortune.<br>
-Because Travel Bharat means travel your way — budget, local, and authentic.<br>
-Because we know the shortcuts, the secret spots, and the soul of India.<br>
-Because you deserve more than just a trip — you deserve a story.<br><br></h4>
-
+            <section class="why-choose">
+  <h3>Why to choose Travel Bharat?</h3>
+  <div class="why-grid">
+    <div class="why-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2731/2731108.png" alt="Cheap Packages">
+      <h4>Because your dream trip shouldn’t cost a fortune.</h4>
+    </div>
+    <div class="why-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Local Travel">
+      <h4>Because Travel Bharat means travel your way — budget, local, and authentic.</h4>
+    </div>
+    <div class="why-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/709/709790.png" alt="Hidden Spots">
+      <h4>Because we know the shortcuts, the secret spots, and the soul of India.</h4>
+    </div>
+    <div class="why-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/482/482467.png" alt="Story Worthy">
+      <h4>Because you deserve more than just a trip — you deserve a story.</h4>
+    </div>
+  </div>
+</section>
 
             <h3>Average Rating for Travel Bharat:<br>
          <h3>4</h3> out of 5   <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
@@ -270,6 +285,49 @@ form{
     flex-direction: column;
     padding: 20px;
   }
+.why-choose {
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+}
+
+.why-choose h3 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-card {
+  background: #212121;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+}
+
+.why-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.why-card h4 {
+  font-size: 16px;
+  line-height: 1.5;
+}
 
 </style>
 </html>
